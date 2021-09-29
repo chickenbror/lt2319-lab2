@@ -14,17 +14,6 @@
     </action>
 
 
-    <!-- <action name="Answer_number">
-        <parameters>
-            <parameter predicate="selected_contact" format="value"/>
-            <parameter predicate="phone_type" format="value"/>
-        </parameters>
-        <failure_reasons/>
-        <target>
-            <http endpoint="http://http-service/action_success_response"/>
-        </target>
-    </action> -->
-
 <!-- When user asks a question about number => findout(contact, phonetype) and call get_number() -->
     <query name="phone_number">
         <parameters>

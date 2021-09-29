@@ -24,6 +24,7 @@
 
 <!-- USER ACTION/QUESTION -->
 <!-- To request the make-call action: 0~2 parameters -->
+<!-- <request action="make_call"> -->
   <action name="make_call">
     <one-of>
       <item>call</item> <item>ring</item> <item>phone</item>
