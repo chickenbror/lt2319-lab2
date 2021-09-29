@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="CallJohnOntology">
+
+    <action name="make_call"/>
+    <!-- <action name="ask_number"/> -->
+
+    <sort name="contact"/>
+    <sort name="phone"/>
+    
+
+<!-- Eg call xxx's mobile -->
+    <predicate name="selected_contact" sort="contact"/>
+    <predicate name="phone_type" sort="phone"/>
+    <predicate name="phone_number" sort="string"/>
+
+<!-- contact idv of 'contact' sort -->
+    <individual name="contact_john" sort="contact"/>
+    <individual name="contact_lisa" sort="contact"/>
+    <individual name="contact_mary" sort="contact"/>
+    <individual name="contact_andy" sort="contact"/>
+<!-- phones idv of 'phone' sort -->
+    <individual name="mobile" sort="phone"/>
+    <individual name="work" sort="phone"/>
+    <individual name="home" sort="phone"/>
+
+</ontology>

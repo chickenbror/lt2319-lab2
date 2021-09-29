@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+
+<!-- entity recognizer  -->
+    <action name="Call">
+        <parameters>
+            <parameter predicate="selected_contact" format="value"/>
+            <parameter predicate="phone_type" format="value"/>
+        </parameters>
+        <failure_reasons/>
+        <target>
+            <http endpoint="http://http-service/action_success_response"/>
+        </target>
+    </action>
+
+
+    <!-- <action name="Answer_number">
+        <parameters>
+            <parameter predicate="selected_contact" format="value"/>
+            <parameter predicate="phone_type" format="value"/>
+        </parameters>
+        <failure_reasons/>
+        <target>
+            <http endpoint="http://http-service/action_success_response"/>
+        </target>
+    </action> -->
+
+<!-- When user asks a question about number => findout(contact, phonetype) and call get_number() -->
+    <query name="phone_number">
+        <parameters>
+            <parameter predicate="selected_contact" format="value"/>
+            <parameter predicate="phone_type" format="value"/>
+        </parameters>
+        <target>
+            <http endpoint="http://http-service/get_number"/>
+        </target>
+    </query>
+
+</service_interface>
